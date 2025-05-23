@@ -6,3 +6,35 @@
       align-items: center;
       height: 100vh;
     }
+    .container {
+      display: flex;
+      gap: 50px;
+    }
+
+    .box {
+      width: 250px;
+      min-height: 300px;
+      padding: 10px;
+      border: 2px dashed #aaa;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .item {
+      padding: 10px 15px;
+      margin: 10px 0;
+      background-color: #d3e5ff;
+      border: 1px solid #3a8dde;
+      border-radius: 5px;
+      cursor: move;
+      font-weight: bold;
+    }
+
+    .item:active {
+      opacity: 0.6;
+    }
+
+    .box.over {
+      background-color: #e0ffe0;
+    }
