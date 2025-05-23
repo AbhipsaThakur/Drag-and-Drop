@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Drag and Drop</title>
 </head>
 <body>
-    
+    <div class="container">
+  <!-- Left Drop Box -->
+  <div class="box" id="box1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+  <!-- Right Box with 4 Draggable Items -->
+  <div class="box" id="box2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="item" draggable="true" ondragstart="drag(event)" id="item1">:: LIST ITEM 1</div>
+    <div class="item" draggable="true" ondragstart="drag(event)" id="item2">:: LIST ITEM 2</div>
+    <div class="item" draggable="true" ondragstart="drag(event)" id="item3">:: LIST ITEM 3</div>
+    <div class="item" draggable="true" ondragstart="drag(event)" id="item4">:: LIST ITEM 4</div>
+  </div>
+</div>
 </body>
 </html>
